@@ -9,20 +9,16 @@
 					<li class="<?php if($this->uri->segment(2)=="Index_admin"){echo "open active";}?>">
 						<a href="widgets.html"> <i class="material-icons">home</i> <span class="title">Dashboard</span></a>
 					</li>
-					<li class="<?php if($this->uri->segment(2)=="Produk"){echo "open active";}?>">
-						<a href="widgets.html"> <i class="material-icons">panorama_horizontal</i> <span class="title">Produk</span></a>
+					<li class="<?php if($this->uri->segment(2)=="Transaksi"){echo "open active";}?>">
+						<a href="javascript:;"> <i class="material-icons">panorama_horizontal</i> <span class="title">Produk</span> <span class=" arrow"></span> </a>
+						<ul class="sub-menu">
+							<li> <a href="<?php echo base_url('admin/Produk/ukuran'); ?>">Ukuran</a> </li>
+							<li> <a href="<?php echo base_url('admin/Produk/daftarProduk'); ?>">Daftar Produk</a> </li>
+						</ul>
 					</li>
 					<li class="<?php if($this->uri->segment(2)=="Transaksi"){echo "open active";}?>">
 						<a href="email.html"> <i class="fa fa-shopping-cart"></i> <span class="title">Transaksi</span>
 						</a>
-					</li>
-					<li>
-						<a href="javascript:;"> <i class="material-icons">invert_colors</i> <span class="title">Themes</span> <span class=" arrow"></span> </a>
-						<ul class="sub-menu">
-							<li> <a href="theme_coporate.html">Coporate </a> </li>
-							<li> <a href="theme_simple.html">Simple</a> </li>
-							<li> <a href="theme_elegant.html">Elegant</a> </li>
-						</ul>
 					</li>
 					
 					<li>
