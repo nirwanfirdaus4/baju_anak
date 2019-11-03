@@ -15,10 +15,22 @@ class Mdl_produk extends CI_Model
 		$query = $this->db->query("SELECT * FROM tb_ukuran");
 		return $query->result_array();
 	}
+	
+	public function ambildata_produk()
+	{
+		$query = $this->db->query("SELECT * FROM tb_produk");
+		return $query->result_array();
+	}
 
 	public function ambildata2($id)
 	{
 		$query = $this->db->query("SELECT * FROM tb_ukuran WHERE id_ukuran=$id");
+		return $query->result_array();
+	}
+	
+	public function ambildata_produk2($id)
+	{
+		$query = $this->db->query("SELECT * FROM tb_produk WHERE id_produk=$id");
 		return $query->result_array();
 	}
 

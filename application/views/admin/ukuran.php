@@ -42,7 +42,7 @@
 <thead>
 <tr>
 <th>No</th>
-<th>Nama Kategori</th>
+<th>Jenis Ukuran</th>
 <th>Harga</th>
 <th>Aksi</th>
 </tr>
