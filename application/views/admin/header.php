@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/owl-carousel/owl.carousel.css') ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/owl-carousel/owl.theme.css') ?>" />
 	<link href="<?php echo base_url('assets/plugins/pace/pace-theme-flash.css') ?>" rel="stylesheet" type="text/css" media="screen" />
-	<link href="<?php echo base_url('assets/plugins/jquery-slider/css/jquery.sidr.light.css"') ?> rel="stylesheet" type="text/css" media="screen" />
+	<link href="<?php echo base_url('assets/plugins/jquery-slider/css/jquery.sidr.light.css') ?>" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo base_url('assets/plugins/jquery-ricksaw-chart/css/rickshaw.css') ?>" type="text/css" media="screen">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plugins/Mapplic/mapplic/mapplic.css') ?>" type="text/css" media="screen">
 

@@ -1,6 +1,5 @@
-<?php $this->load->view('admin/header_table') ?>
+<?php $this->load->view('admin/header') ?>
 <?php $this->load->view('admin/navigasi') ?>
-<!-- isi -->
 
 <div class="page-content">
 
@@ -17,7 +16,7 @@
 <li>
 <p>Produk</p>
 </li>
-<li><a href="#" class="active">Ukuran</a> </li>
+<li><a href="#" class="active">Tambah Ukuran</a> </li>
 </ul>
 <div class="page-title"> 
 <!-- 	<i class="icon-custom-left"></i>
@@ -28,69 +27,42 @@
 <div class="span12">
 <div class="grid simple ">
 <div class="grid-title">
-<h4>Data <span class="semi-bold">Ukuran</span></h4>
-<div class="tools">
-<!-- <a href="javascript:;" class="collapse"></a>
+<!-- <h4>Data <span class="semi-bold">Ukuran</span></h4> -->
+<!-- <div class="tools">
+<a href="javascript:;" class="collapse"></a>
 <a href="#grid-config" data-toggle="modal" class="config"></a>
 <a href="javascript:;" class="reload"></a>
-<a href="javascript:;" class="remove"></a> -->
-<a href="<?php echo base_url('admin/Produk/tambahdata') ?>"><button type="button" class="btn btn-success btn-cons">Tambah Data</button></a>
+<a href="javascript:;" class="remove"></a>
+</div> -->
 </div>
-</div>
-<div class="grid-body ">
-<table class="table table-striped" id="example2">
-<thead>
-<tr>
-<th>No</th>
-<th>Nama Kategori</th>
-<th>Harga</th>
-<th>Aksi</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd gradeX">
-    <?php $no = 1;
-    foreach ($array as $key) { ?>
-        <td><?php echo $no++ ?></td>
-        <td><?php echo $key['nama_ukuran'] ?></td>
-        <td>Rp. <?php echo $key['harga'] ?></td>
-		<td>
-			
-			<a href="<?php echo base_url('admin/Produk/edit/'.$key['id_ukuran']) ?>"><button type="button" class="btn btn-primary"><i class="fa fa-pencil"></i></button></a>	
-			<a href="<?php echo base_url('admin/Produk/hapus/'.$key['id_ukuran']) ?>"><button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></a>			
-		</td>
-</tr>
-        <?php } ?>
+<div class="grid-body no-border">
+<form action="<?php echo base_url('admin/Produk/tambahdata') ?>" id="form_traditional_validation" name="form_traditional_validation" role="form" autocomplete="off" method="post" class="validate">
 
-</tbody>
-</table>
+<div class="form-group">
+<label class="form-label">Nama Ukuran</label>
+<div class="input-with-icon right">
+<i class=""></i>
+<input class="form-control" id="form1CardHolderName" name="nama_ukuran" type="text" required>
 </div>
 </div>
-</div>
+<div class="form-group">
+<label class="form-label">Harga</label> <span class="help">contoh "250000"</span>
+<input class="form-control" id="form1Amount" name="harga" type="number" required>
 </div>
 
+<div class="form-actions">
+<div class="pull-right">
+<button class="btn btn-success btn-cons" type="submit"><i class="icon-ok"></i> Simpan</button>
+<button class="btn btn-white btn-cons" type="button">Batal</button>
+</div>
+</div>
+</form>
 
 </div>
-<div class="admin-bar" id="quick-access" style="display:">
-<div class="admin-bar-inner">
-<div class="form-horizontal">
-<!-- <select id="val1" class="select2-wrapper m-r-10">
-<option value="Gecko">Gecko</option>
-<option value="Webkit">Webkit</option>
-<option value="KHTML">KHTML</option>
-<option value="Tasman">Tasman</option>
-</select> -->
-<select id="val2" class="select2-wrapper">
-<option value="Internet Explorer 10">Internet Explorer 10</option>
-<option value="Firefox 4.0">Firefox 4.0</option>
-<option value="Chrome">Chrome</option>
-</select>
-</div>
-<button class="btn btn-primary btn-cons btn-add" type="button">Add Browser</button>
-<button class="btn btn-white btn-cons btn-cancel" type="button">Cancel</button>
 </div>
 </div>
-<div class="addNewRow"></div>
+</div>
+</div>
 </div>
 
 <div class="chat-window-wrapper">
@@ -116,7 +88,7 @@
 <div class="status-icon green"></div>Office work</a>
 </li>
 <li>
- <a href="#">
+<a href="#">
 <div class="status-icon green"></div>Personal vibes</a>
 </li>
 </ul>
@@ -331,4 +303,4 @@ Let me know when you free
 
 </div>
 
-<?php $this->load->view('admin/footer_table') ?>
+<?php $this->load->view('admin/footer') ?>
